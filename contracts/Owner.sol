@@ -9,7 +9,7 @@ contract Owner {
         owner = msg.sender;
     }
 
-    modifier isOwner(){
+    modifier isOwner() {
         require(msg.sender == owner, "Not the owner");
         _;
     }
